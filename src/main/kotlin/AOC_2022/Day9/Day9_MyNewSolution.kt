@@ -1,7 +1,8 @@
 
 import java.io.File
     val myList = File("src/main/kotlin/AOC_2022/Day9/Data9.txt").useLines { it.toList() }
-    data class Point(val x:Int,val y:Int)  //genom att använda data class kan vi lägga alla points i ett Set och få bort alla duplicates
+  //genom att använda data class kan vi lägga alla points i ett Set och få bort alla duplicates
+    data class Point(val x:Int,val y:Int)
 
     fun allMovements(list:List<String>):List<Char> {
         return list.map { s ->
